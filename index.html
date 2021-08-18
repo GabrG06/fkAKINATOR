@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" >
+    <title>FkAkinator</title>
+    <link rel="stylesheet" type="text/css" href="fkakinatorstylesheet.css">
+</head>
+<body>
+    <header> 
+        <h1>FkAKINATOR</h1>
+        <h2>THE FAKE AKINATOR</h2>
+    </header>
+
+    <section>
+          <h3>How old are you?</h3>
+          <input class="inp" id="ageinput">
+          <button class="but" onclick="fk()">SEND</button>
+    </section>
+
+    <section>
+        <div id="name"></div>
+    </section>
+    
+    <script>
+        function fk(){
+            x = document.getElementById('ageinput').value
+            if (x == 14) {
+                document.getElementById('name').innerHTML = "You're Gabriele"
+            } else if (x == 15) {
+                document.getElementById('name').innerHTML = "You're Adriana"
+            } else {
+                document.getElementById('name').innerHTML = "Write you're age"
+            }
+        }    
+            
+    </script>
+</body>
+</html>
